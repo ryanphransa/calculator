@@ -1,0 +1,2 @@
+source /home/noise/Projects/calculator/build/gdbinit/symbols
+source /home/noise/Projects/calculator/build/gdbinit/connect

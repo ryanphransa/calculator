@@ -1,0 +1,30 @@
+Command: make -j 14 all
+/home/noise/Projects/calculator/main/calculator.c:22:9: error: 'REG_READ' redefined [-Werror]
+   22 | #define REG_READ(reg) (*(volatile uint32_t *)(reg))
+      |         ^~~~~~~~
+In file included from /home/noise/esp-idf/components/esp_hw_support/include/esp_memory_utils.h:12,
+                 from /home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos/portmacro.h:53,
+                 from /home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/portable.h:57,
+                 from /home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/FreeRTOS.h:69,
+                 from /home/noise/Projects/calculator/main/calculator.c:3:
+/home/noise/esp-idf/components/soc/esp32/include/soc/soc.h:45:9: note: this is the location of the previous definition
+   45 | #define REG_READ(_r) ({                                                                                                \
+      |         ^~~~~~~~
+/home/noise/Projects/calculator/main/calculator.c: In function 'app_main':
+/home/noise/Projects/calculator/main/calculator.c:87:7: warning: unused variable 'tick' [-Wunused-variable]
+   87 |   int tick = 0;
+      |       ^~~~
+/home/noise/Projects/calculator/main/calculator.c:84:10: warning: unused variable 'i' [-Wunused-variable]
+   84 |   size_t i = 0, j = 0;
+      |          ^
+/home/noise/Projects/calculator/main/calculator.c:83:8: warning: variable 'operator' set but not used [-Wunused-but-set-variable=]
+   83 |   char operator[100] = {0};
+      |        ^~~~~~~~
+/home/noise/Projects/calculator/main/calculator.c:82:10: warning: variable 'operand' set but not used [-Wunused-but-set-variable=]
+   82 |   double operand[100] = {0};
+      |          ^~~~~~~
+cc1: all warnings being treated as errors
+configdep.c:684: in main: exec_process exited with error code: 1
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:79: esp-idf/main/CMakeFiles/__idf_main.dir/calculator.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:9653: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

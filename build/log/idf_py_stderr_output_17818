@@ -1,0 +1,11 @@
+Command: make -j 14 all
+/home/noise/Projects/calculator/main/calculator.c: In function 'expression':
+/home/noise/Projects/calculator/main/calculator.c:117:12: warning: unused variable 'ignore_it' [-Wunused-variable]
+  117 |     size_t ignore_it = 1; // cosmetic index '1)'
+      |            ^~~~~~~~~
+/home/noise/Projects/calculator/main/calculator.c:114:11: warning: unused variable 'result' [-Wunused-variable]
+  114 |     float result = 0;
+      |           ^~~~~~
+/home/noise/Projects/calculator/main/calculator.c:113:11: warning: unused variable 'results' [-Wunused-variable]
+  113 |     float results[BUFFER_SIZE];
+      |           ^~~~~~~

@@ -1,0 +1,44 @@
+Command: make -j 14 all
+NOTE: /home/noise/esp-idf/components/bootloader/Kconfig.projbuild:383: Deprecation notice: hex literal '0' without '0x' prefix detected. In the next major version, hex literals will be required to have a '0x' prefix.
+NOTE: /home/noise/esp-idf/components/bootloader/Kconfig.projbuild:423: Deprecation notice: hex literal '0' without '0x' prefix detected. In the next major version, hex literals will be required to have a '0x' prefix.
+NOTE: /home/noise/esp-idf/components/esp_hw_support/./lowpower/port/esp32p4/Kconfig.p4_rev3_mspi_workaround:6: Deprecation notice: hex literal '0' without '0x' prefix detected. In the next major version, hex literals will be required to have a '0x' prefix.
+NOTE: /home/noise/esp-idf/components/esp_system/./port/soc/esp32/Kconfig.memory:24: Deprecation notice: hex literal '0' without '0x' prefix detected. In the next major version, hex literals will be required to have a '0x' prefix.
+NOTE: Kconfig parser version: 1
+NOTE: Kconfig defaults policy: use sdkconfig
+NOTE: Status: Finished successfully
+/home/noise/Projects/calculator/main/calculator.c: In function 'fakegetline':
+/home/noise/Projects/calculator/main/calculator.c:130:18: error: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Werror=format=]
+  130 |         printf("%d ", button_pressed_gpio);
+      |                 ~^    ~~~~~~~~~~~~~~~~~~~
+      |                  |    |
+      |                  int  double
+      |                 %f
+/home/noise/Projects/calculator/main/calculator.c:154:25: error: 'c' undeclared (first use in this function)
+  154 |         operator[j++] = c;
+      |                         ^
+/home/noise/Projects/calculator/main/calculator.c:154:25: note: each undeclared identifier is reported only once for each function it appears in
+/home/noise/Projects/calculator/main/calculator.c: In function 'expression':
+/home/noise/Projects/calculator/main/calculator.c:243:11: warning: unused variable 'result' [-Wunused-variable]
+  243 |     float result = 0;
+      |           ^~~~~~
+/home/noise/Projects/calculator/main/calculator.c:242:11: warning: unused variable 'results' [-Wunused-variable]
+  242 |     float results[BUFFER_SIZE];
+      |           ^~~~~~~
+/home/noise/Projects/calculator/main/calculator.c: In function 'isoperator':
+/home/noise/Projects/calculator/main/calculator.c:55:11: error: this statement may fall through [-Werror=implicit-fallthrough=]
+   55 |           printf("+ ");
+      |           ^~~~~~~~~~~~
+/home/noise/Projects/calculator/main/calculator.c:56:9: note: here
+   56 |         case 5: // -
+      |         ^~~~
+/home/noise/Projects/calculator/main/calculator.c:57:11: error: this statement may fall through [-Werror=implicit-fallthrough=]
+   57 |           printf("- ");
+      |           ^~~~~~~~~~~~
+/home/noise/Projects/calculator/main/calculator.c:58:9: note: here
+   58 |         case 3: // *
+      |         ^~~~
+cc1: all warnings being treated as errors
+configdep.c:684: in main: exec_process exited with error code: 1
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:79: esp-idf/main/CMakeFiles/__idf_main.dir/calculator.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:9653: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2

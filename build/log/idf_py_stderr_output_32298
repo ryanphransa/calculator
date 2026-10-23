@@ -1,0 +1,14 @@
+Command: make -j 14 all
+/home/noise/Projects/calculator/main/calculator.c: In function 'app_main':
+/home/noise/Projects/calculator/main/calculator.c:84:7: warning: unused variable 'tick' [-Wunused-variable]
+   84 |   int tick = 0;
+      |       ^~~~
+/home/noise/Projects/calculator/main/calculator.c:81:10: warning: unused variable 'i' [-Wunused-variable]
+   81 |   size_t i = 0, j = 0;
+      |          ^
+/home/noise/Projects/calculator/main/calculator.c:80:8: warning: variable 'operator' set but not used [-Wunused-but-set-variable=]
+   80 |   char operator[100] = {0};
+      |        ^~~~~~~~
+/home/noise/Projects/calculator/main/calculator.c:79:10: warning: variable 'operand' set but not used [-Wunused-but-set-variable=]
+   79 |   double operand[100] = {0};
+      |          ^~~~~~~

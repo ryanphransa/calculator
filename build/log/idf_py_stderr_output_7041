@@ -1,0 +1,575 @@
+Command: make -j 14 all
+In file included from /home/noise/Projects/calculator/main/calculator.c:4:
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:38:6: error: #error "include FreeRTOS.h must appear in source files before include task.h"
+   38 |     #error "include FreeRTOS.h must appear in source files before include task.h"
+      |      ^~~~~
+In file included from /home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:41:
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:66:6: error: #error "FreeRTOS.h must be included before list.h"
+   66 |     #error "FreeRTOS.h must be included before list.h"
+      |      ^~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:151:25: error: unknown type name 'TickType_t'
+  151 |     configLIST_VOLATILE TickType_t xItemValue;          /*< The value being listed.  In most cases this is used to sort the list in ascending order. */
+      |                         ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:179:14: error: unknown type name 'UBaseType_t'
+  179 |     volatile UBaseType_t uxNumberOfItems;
+      |              ^~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h: In function 'vListInitialise':
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:437:47: error: expected declaration specifiers before 'PRIVILEGED_FUNCTION'
+  437 | void vListInitialise( List_t * const pxList ) PRIVILEGED_FUNCTION;
+      |                                               ^~~~~~~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:448:55: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+  448 | void vListInitialiseItem( ListItem_t * const pxItem ) PRIVILEGED_FUNCTION;
+      |                                                       ^~~~~~~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:462:54: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+  462 |                   ListItem_t * const pxNewListItem ) PRIVILEGED_FUNCTION;
+      |                                                      ^~~~~~~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:484:57: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+  484 |                      ListItem_t * const pxNewListItem ) PRIVILEGED_FUNCTION;
+      |                                                         ^~~~~~~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:499:1: error: unknown type name 'UBaseType_t'
+  499 | UBaseType_t uxListRemove( ListItem_t * const pxItemToRemove ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:499:63: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+  499 | UBaseType_t uxListRemove( ListItem_t * const pxItemToRemove ) PRIVILEGED_FUNCTION;
+      |                                                               ^~~~~~~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:92:1: error: empty declaration [-Werror]
+   92 | struct tskTaskControlBlock; /* The old naming convention is used to prevent breaking kernel aware debuggers. */
+      | ^~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:93:38: error: storage class specified for parameter 'TaskHandle_t'
+   93 | typedef struct tskTaskControlBlock * TaskHandle_t;
+      |                                      ^~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:99:21: error: expected declaration specifiers or '...' before '*' token
+   99 | typedef BaseType_t (* TaskHookFunction_t)( void * );
+      |                     ^
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:110:3: error: storage class specified for parameter 'eTaskState'
+  110 | } eTaskState;
+      |   ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:120:3: error: storage class specified for parameter 'eNotifyAction'
+  120 | } eNotifyAction;
+      |   ^~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:129:5: error: unknown type name 'BaseType_t'
+  129 |     BaseType_t xOverflowCount;
+      |     ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:130:5: error: unknown type name 'TickType_t'
+  130 |     TickType_t xTimeOnEntering;
+      |     ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:131:3: error: storage class specified for parameter 'TimeOut_t'
+  131 | } TimeOut_t;
+      |   ^~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:141:3: error: storage class specified for parameter 'MemoryRegion_t'
+  141 | } MemoryRegion_t;
+      |   ^~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:148:5: error: unknown type name 'TaskFunction_t'
+  148 |     TaskFunction_t pvTaskCode;
+      |     ^~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:150:5: error: unknown type name 'configSTACK_DEPTH_TYPE'
+  150 |     configSTACK_DEPTH_TYPE usStackDepth;
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:152:5: error: unknown type name 'UBaseType_t'
+  152 |     UBaseType_t uxPriority;
+      |     ^~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:153:5: error: unknown type name 'StackType_t'
+  153 |     StackType_t * puxStackBuffer;
+      |     ^~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:154:5: error: expected specifier-qualifier-list before 'MemoryRegion_t'
+  154 |     MemoryRegion_t xRegions[ portNUM_CONFIGURABLE_REGIONS ];
+      |     ^~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:158:3: error: storage class specified for parameter 'TaskParameters_t'
+  158 | } TaskParameters_t;
+      |   ^~~~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:166:5: error: expected specifier-qualifier-list before 'TaskHandle_t'
+  166 |     TaskHandle_t xHandle;                         /**< The handle of the task to which the rest of the information in the structure relates. */
+      |     ^~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:182:3: error: storage class specified for parameter 'TaskStatus_t'
+  182 | } TaskStatus_t;
+      |   ^~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:192:3: error: storage class specified for parameter 'eSleepModeStatus'
+  192 | } eSleepModeStatus;
+      |   ^~~~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:745:31: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+  745 | void vTaskAllocateMPURegions( TaskHandle_t xTask,
+      |                               ^~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:746:37: error: type defaults to 'int' in declaration of 'MemoryRegion_t' [-Wimplicit-int]
+  746 |                               const MemoryRegion_t * const pxRegions ) PRIVILEGED_FUNCTION;
+      |                                     ^~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:746:52: error: expected ';', ',' or ')' before '*' token
+  746 |                               const MemoryRegion_t * const pxRegions ) PRIVILEGED_FUNCTION;
+      |                                                    ^
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:784:19: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+  784 | void vTaskDelete( TaskHandle_t xTaskToDelete ) PRIVILEGED_FUNCTION;
+      |                   ^~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:833:24: error: unknown type name 'TickType_t'
+  833 | void vTaskDelay( const TickType_t xTicksToDelay ) PRIVILEGED_FUNCTION;
+      |                        ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:833:51: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+  833 | void vTaskDelay( const TickType_t xTicksToDelay ) PRIVILEGED_FUNCTION;
+      |                                                   ^~~~~~~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:895:1: error: unknown type name 'BaseType_t'
+  895 | BaseType_t xTaskDelayUntil( TickType_t * const pxPreviousWakeTime,
+      | ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:895:29: error: unknown type name 'TickType_t'
+  895 | BaseType_t xTaskDelayUntil( TickType_t * const pxPreviousWakeTime,
+      |                             ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:896:35: error: unknown type name 'TickType_t'
+  896 |                             const TickType_t xTimeIncrement ) PRIVILEGED_FUNCTION;
+      |                                   ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:937:1: error: unknown type name 'BaseType_t'
+  937 | BaseType_t xTaskAbortDelay( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:937:29: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+  937 | BaseType_t xTaskAbortDelay( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      |                             ^~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:981:1: error: unknown type name 'UBaseType_t'
+  981 | UBaseType_t uxTaskPriorityGet( const TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:981:38: error: type defaults to 'int' in declaration of 'TaskHandle_t' [-Wimplicit-int]
+  981 | UBaseType_t uxTaskPriorityGet( const TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      |                                      ^~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:981:51: error: expected ';', ',' or ')' before 'xTask'
+  981 | UBaseType_t uxTaskPriorityGet( const TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      |                                                   ^~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:987:1: error: unknown type name 'UBaseType_t'
+  987 | UBaseType_t uxTaskPriorityGetFromISR( const TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:987:45: error: type defaults to 'int' in declaration of 'TaskHandle_t' [-Wimplicit-int]
+  987 | UBaseType_t uxTaskPriorityGetFromISR( const TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      |                                             ^~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:987:58: error: expected ';', ',' or ')' before 'xTask'
+  987 | UBaseType_t uxTaskPriorityGetFromISR( const TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      |                                                          ^~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1003:1: error: expected declaration specifiers before 'eTaskState'
+ 1003 | eTaskState eTaskGetState( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1056:20: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1056 | void vTaskGetInfo( TaskHandle_t xTask,
+      |                    ^~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1057:20: error: expected declaration specifiers or '...' before 'TaskStatus_t'
+ 1057 |                    TaskStatus_t * pxTaskStatus,
+      |                    ^~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1058:20: error: unknown type name 'BaseType_t'
+ 1058 |                    BaseType_t xGetFreeStackSpace,
+      |                    ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1059:20: error: expected declaration specifiers or '...' before 'eTaskState'
+ 1059 |                    eTaskState eState ) PRIVILEGED_FUNCTION;
+      |                    ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1098:24: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1098 | void vTaskPrioritySet( TaskHandle_t xTask,
+      |                        ^~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1099:24: error: unknown type name 'UBaseType_t'
+ 1099 |                        UBaseType_t uxNewPriority ) PRIVILEGED_FUNCTION;
+      |                        ^~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1147:20: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1147 | void vTaskSuspend( TaskHandle_t xTaskToSuspend ) PRIVILEGED_FUNCTION;
+      |                    ^~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1193:19: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1193 | void vTaskResume( TaskHandle_t xTaskToResume ) PRIVILEGED_FUNCTION;
+      |                   ^~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1219:1: error: unknown type name 'BaseType_t'
+ 1219 | BaseType_t xTaskResumeFromISR( TaskHandle_t xTaskToResume ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1219:32: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1219 | BaseType_t xTaskResumeFromISR( TaskHandle_t xTaskToResume ) PRIVILEGED_FUNCTION;
+      |                                ^~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1251:34: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1251 | void vTaskStartScheduler( void ) PRIVILEGED_FUNCTION;
+      |                                  ^~~~~~~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1304:32: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1304 | void vTaskEndScheduler( void ) PRIVILEGED_FUNCTION;
+      |                                ^~~~~~~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1354:30: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1354 | void vTaskSuspendAll( void ) PRIVILEGED_FUNCTION;
+      |                              ^~~~~~~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1405:1: error: unknown type name 'BaseType_t'
+ 1405 | BaseType_t xTaskResumeAll( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1405:35: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1405 | BaseType_t xTaskResumeAll( void ) PRIVILEGED_FUNCTION;
+      |                                   ^~~~~~~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1417:1: error: unknown type name 'TickType_t'
+ 1417 | TickType_t xTaskGetTickCount( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1417:38: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1417 | TickType_t xTaskGetTickCount( void ) PRIVILEGED_FUNCTION;
+      |                                      ^~~~~~~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1430:1: error: unknown type name 'TickType_t'
+ 1430 | TickType_t xTaskGetTickCountFromISR( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1430:45: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1430 | TickType_t xTaskGetTickCountFromISR( void ) PRIVILEGED_FUNCTION;
+      |                                             ^~~~~~~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1441:1: error: unknown type name 'UBaseType_t'
+ 1441 | UBaseType_t uxTaskGetNumberOfTasks( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1441:44: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1441 | UBaseType_t uxTaskGetNumberOfTasks( void ) PRIVILEGED_FUNCTION;
+      |                                            ^~~~~~~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1451:23: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1451 | char * pcTaskGetName( TaskHandle_t xTaskToQuery ) PRIVILEGED_FUNCTION; /*lint !e971 Unqualified char types are allowed for strings and single characters only. */
+      |                       ^~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1464:1: error: expected declaration specifiers before 'TaskHandle_t'
+ 1464 | TaskHandle_t xTaskGetHandle( const char * pcNameToQuery ) PRIVILEGED_FUNCTION; /*lint !e971 Unqualified char types are allowed for strings and single characters only. */
+      | ^~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1512:1: error: unknown type name 'UBaseType_t'
+ 1512 | UBaseType_t uxTaskGetStackHighWaterMark( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1512:42: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1512 | UBaseType_t uxTaskGetStackHighWaterMark( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      |                                          ^~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1537:1: error: unknown type name 'configSTACK_DEPTH_TYPE'
+ 1537 | configSTACK_DEPTH_TYPE uxTaskGetStackHighWaterMark2( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1537:54: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1537 | configSTACK_DEPTH_TYPE uxTaskGetStackHighWaterMark2( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      |                                                      ^~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1640:1: error: unknown type name 'BaseType_t'
+ 1640 | BaseType_t xTaskCallApplicationTaskHook( TaskHandle_t xTask,
+      | ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1640:42: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1640 | BaseType_t xTaskCallApplicationTaskHook( TaskHandle_t xTask,
+      |                                          ^~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1650:1: error: expected declaration specifiers before 'TaskHandle_t'
+ 1650 | TaskHandle_t xTaskGetIdleTaskHandle( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1749:1: error: unknown type name 'UBaseType_t'
+ 1749 | UBaseType_t uxTaskGetSystemState( TaskStatus_t * const pxTaskStatusArray,
+      | ^~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1749:35: error: expected declaration specifiers or '...' before 'TaskStatus_t'
+ 1749 | UBaseType_t uxTaskGetSystemState( TaskStatus_t * const pxTaskStatusArray,
+      |                                   ^~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1750:41: error: unknown type name 'UBaseType_t'
+ 1750 |                                   const UBaseType_t uxArraySize,
+      |                                         ^~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1751:35: error: unknown type name 'configRUN_TIME_COUNTER_TYPE'
+ 1751 |                                   configRUN_TIME_COUNTER_TYPE * const pulTotalRunTime ) PRIVILEGED_FUNCTION;
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1797:40: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1797 | void vTaskList( char * pcWriteBuffer ) PRIVILEGED_FUNCTION; /*lint !e971 Unqualified char types are allowed for strings and single characters only. */
+      |                                        ^~~~~~~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1848:51: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1848 | void vTaskGetRunTimeStats( char * pcWriteBuffer ) PRIVILEGED_FUNCTION; /*lint !e971 Unqualified char types are allowed for strings and single characters only. */
+      |                                                   ^~~~~~~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1885:1: error: unknown type name 'configRUN_TIME_COUNTER_TYPE'
+ 1885 | configRUN_TIME_COUNTER_TYPE ulTaskGetIdleRunTimeCounter( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1885:65: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1885 | configRUN_TIME_COUNTER_TYPE ulTaskGetIdleRunTimeCounter( void ) PRIVILEGED_FUNCTION;
+      |                                                                 ^~~~~~~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1886:1: error: unknown type name 'configRUN_TIME_COUNTER_TYPE'
+ 1886 | configRUN_TIME_COUNTER_TYPE ulTaskGetIdleRunTimePercent( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1886:65: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1886 | configRUN_TIME_COUNTER_TYPE ulTaskGetIdleRunTimePercent( void ) PRIVILEGED_FUNCTION;
+      |                                                                 ^~~~~~~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1991:1: error: unknown type name 'BaseType_t'
+ 1991 | BaseType_t xTaskGenericNotify( TaskHandle_t xTaskToNotify,
+      | ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1991:32: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 1991 | BaseType_t xTaskGenericNotify( TaskHandle_t xTaskToNotify,
+      |                                ^~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1992:32: error: unknown type name 'UBaseType_t'
+ 1992 |                                UBaseType_t uxIndexToNotify,
+      |                                ^~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:1994:32: error: expected declaration specifiers or '...' before 'eNotifyAction'
+ 1994 |                                eNotifyAction eAction,
+      |                                ^~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2135:1: error: unknown type name 'BaseType_t'
+ 2135 | BaseType_t xTaskGenericNotifyFromISR( TaskHandle_t xTaskToNotify,
+      | ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2135:39: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 2135 | BaseType_t xTaskGenericNotifyFromISR( TaskHandle_t xTaskToNotify,
+      |                                       ^~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2136:39: error: unknown type name 'UBaseType_t'
+ 2136 |                                       UBaseType_t uxIndexToNotify,
+      |                                       ^~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2138:39: error: expected declaration specifiers or '...' before 'eNotifyAction'
+ 2138 |                                       eNotifyAction eAction,
+      |                                       ^~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2140:39: error: unknown type name 'BaseType_t'
+ 2140 |                                       BaseType_t * pxHigherPriorityTaskWoken ) PRIVILEGED_FUNCTION;
+      |                                       ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2270:1: error: unknown type name 'BaseType_t'
+ 2270 | BaseType_t xTaskGenericNotifyWait( UBaseType_t uxIndexToWaitOn,
+      | ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2270:36: error: unknown type name 'UBaseType_t'
+ 2270 | BaseType_t xTaskGenericNotifyWait( UBaseType_t uxIndexToWaitOn,
+      |                                    ^~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2274:36: error: unknown type name 'TickType_t'
+ 2274 |                                    TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                    ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2426:37: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 2426 | void vTaskGenericNotifyGiveFromISR( TaskHandle_t xTaskToNotify,
+      |                                     ^~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2427:37: error: unknown type name 'UBaseType_t'
+ 2427 |                                     UBaseType_t uxIndexToNotify,
+      |                                     ^~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2428:37: error: unknown type name 'BaseType_t'
+ 2428 |                                     BaseType_t * pxHigherPriorityTaskWoken ) PRIVILEGED_FUNCTION;
+      |                                     ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2526:35: error: unknown type name 'UBaseType_t'
+ 2526 | uint32_t ulTaskGenericNotifyTake( UBaseType_t uxIndexToWaitOn,
+      |                                   ^~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2527:35: error: unknown type name 'BaseType_t'
+ 2527 |                                   BaseType_t xClearCountOnExit,
+      |                                   ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2528:35: error: unknown type name 'TickType_t'
+ 2528 |                                   TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                   ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2585:1: error: unknown type name 'BaseType_t'
+ 2585 | BaseType_t xTaskGenericNotifyStateClear( TaskHandle_t xTask,
+      | ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2585:42: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 2585 | BaseType_t xTaskGenericNotifyStateClear( TaskHandle_t xTask,
+      |                                          ^~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2586:42: error: unknown type name 'UBaseType_t'
+ 2586 |                                          UBaseType_t uxIndexToClear ) PRIVILEGED_FUNCTION;
+      |                                          ^~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2643:41: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 2643 | uint32_t ulTaskGenericNotifyValueClear( TaskHandle_t xTask,
+      |                                         ^~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2644:41: error: unknown type name 'UBaseType_t'
+ 2644 |                                         UBaseType_t uxIndexToClear,
+      |                                         ^~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2660:28: error: expected declaration specifiers or '...' before 'TimeOut_t'
+ 2660 | void vTaskSetTimeOutState( TimeOut_t * const pxTimeOut ) PRIVILEGED_FUNCTION;
+      |                            ^~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2740:1: error: unknown type name 'BaseType_t'
+ 2740 | BaseType_t xTaskCheckForTimeOut( TimeOut_t * const pxTimeOut,
+      | ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2740:34: error: expected declaration specifiers or '...' before 'TimeOut_t'
+ 2740 | BaseType_t xTaskCheckForTimeOut( TimeOut_t * const pxTimeOut,
+      |                                  ^~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2741:34: error: unknown type name 'TickType_t'
+ 2741 |                                  TickType_t * const pxTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                  ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2764:1: error: unknown type name 'BaseType_t'
+ 2764 | BaseType_t xTaskCatchUpTicks( TickType_t xTicksToCatchUp ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2764:31: error: unknown type name 'TickType_t'
+ 2764 | BaseType_t xTaskCatchUpTicks( TickType_t xTicksToCatchUp ) PRIVILEGED_FUNCTION;
+      |                               ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2791:1: error: unknown type name 'BaseType_t'
+ 2791 | BaseType_t xTaskIncrementTick( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2791:39: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 2791 | BaseType_t xTaskIncrementTick( void ) PRIVILEGED_FUNCTION;
+      |                                       ^~~~~~~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2825:35: error: unknown type name 'TickType_t'
+ 2825 |                             const TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                   ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2825:61: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 2825 |                             const TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                                             ^~~~~~~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2827:44: error: unknown type name 'TickType_t'
+ 2827 |                                      const TickType_t xItemValue,
+      |                                            ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2828:44: error: unknown type name 'TickType_t'
+ 2828 |                                      const TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                            ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2828:70: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 2828 |                                      const TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                                                      ^~~~~~~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2842:39: error: unknown type name 'TickType_t'
+ 2842 |                                       TickType_t xTicksToWait,
+      |                                       ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2843:45: error: unknown type name 'BaseType_t'
+ 2843 |                                       const BaseType_t xWaitIndefinitely ) PRIVILEGED_FUNCTION;
+      |                                             ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2869:1: error: unknown type name 'BaseType_t'
+ 2869 | BaseType_t xTaskRemoveFromEventList( const List_t * const pxEventList ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2869:73: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 2869 | BaseType_t xTaskRemoveFromEventList( const List_t * const pxEventList ) PRIVILEGED_FUNCTION;
+      |                                                                         ^~~~~~~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2871:47: error: unknown type name 'TickType_t'
+ 2871 |                                         const TickType_t xItemValue ) PRIVILEGED_FUNCTION;
+      |                                               ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2871:71: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 2871 |                                         const TickType_t xItemValue ) PRIVILEGED_FUNCTION;
+      |                                                                       ^~~~~~~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2881:1: error: expected declaration specifiers before 'portDONT_DISCARD'
+ 2881 | portDONT_DISCARD void vTaskSwitchContext( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2887:1: error: unknown type name 'TickType_t'
+ 2887 | TickType_t uxTaskResetEventItemValue( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2887:46: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 2887 | TickType_t uxTaskResetEventItemValue( void ) PRIVILEGED_FUNCTION;
+      |                                              ^~~~~~~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2892:1: error: expected declaration specifiers before 'TaskHandle_t'
+ 2892 | TaskHandle_t xTaskGetCurrentTaskHandle( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2898:31: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 2898 | void vTaskMissedYield( void ) PRIVILEGED_FUNCTION;
+      |                               ^~~~~~~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2904:1: error: unknown type name 'BaseType_t'
+ 2904 | BaseType_t xTaskGetSchedulerState( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2904:43: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 2904 | BaseType_t xTaskGetSchedulerState( void ) PRIVILEGED_FUNCTION;
+      |                                           ^~~~~~~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2910:1: error: unknown type name 'BaseType_t'
+ 2910 | BaseType_t xTaskPriorityInherit( TaskHandle_t const pxMutexHolder ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2910:34: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 2910 | BaseType_t xTaskPriorityInherit( TaskHandle_t const pxMutexHolder ) PRIVILEGED_FUNCTION;
+      |                                  ^~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2916:1: error: unknown type name 'BaseType_t'
+ 2916 | BaseType_t xTaskPriorityDisinherit( TaskHandle_t const pxMutexHolder ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2916:37: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 2916 | BaseType_t xTaskPriorityDisinherit( TaskHandle_t const pxMutexHolder ) PRIVILEGED_FUNCTION;
+      |                                     ^~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2926:43: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 2926 | void vTaskPriorityDisinheritAfterTimeout( TaskHandle_t const pxMutexHolder,
+      |                                           ^~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2927:43: error: unknown type name 'UBaseType_t'
+ 2927 |                                           UBaseType_t uxHighestPriorityWaitingTask ) PRIVILEGED_FUNCTION;
+      |                                           ^~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2932:1: error: unknown type name 'UBaseType_t'
+ 2932 | UBaseType_t uxTaskGetTaskNumber( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2932:34: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 2932 | UBaseType_t uxTaskGetTaskNumber( TaskHandle_t xTask ) PRIVILEGED_FUNCTION;
+      |                                  ^~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2938:26: error: expected declaration specifiers or '...' before 'TaskHandle_t'
+ 2938 | void vTaskSetTaskNumber( TaskHandle_t xTask,
+      |                          ^~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2939:32: error: unknown type name 'UBaseType_t'
+ 2939 |                          const UBaseType_t uxHandle ) PRIVILEGED_FUNCTION;
+      |                                ^~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2949:21: error: unknown type name 'TickType_t'
+ 2949 | void vTaskStepTick( TickType_t xTicksToJump ) PRIVILEGED_FUNCTION;
+      |                     ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2965:1: error: expected declaration specifiers before 'eSleepModeStatus'
+ 2965 | eSleepModeStatus eTaskConfirmSleepModeStatus( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2971:1: error: expected declaration specifiers before 'TaskHandle_t'
+ 2971 | TaskHandle_t pvTaskIncrementMutexHeldCount( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/task.h:2977:36: error: expected declaration specifiers or '...' before 'TimeOut_t'
+ 2977 | void vTaskInternalSetTimeOutState( TimeOut_t * const pxTimeOut ) PRIVILEGED_FUNCTION;
+      |                                    ^~~~~~~~~
+In file included from /home/noise/Projects/calculator/main/calculator.c:5:
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:38:6: error: #error "include FreeRTOS.h must appear in source files before include timers.h"
+   38 |     #error "include FreeRTOS.h must appear in source files before include timers.h"
+      |      ^~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:86:1: error: empty declaration [-Werror]
+   86 | struct tmrTimerControl; /* The old naming convention is used to prevent breaking kernel aware debuggers. */
+      | ^~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:87:34: error: storage class specified for parameter 'TimerHandle_t'
+   87 | typedef struct tmrTimerControl * TimerHandle_t;
+      |                                  ^~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:92:43: error: expected declaration specifiers or '...' before 'TimerHandle_t'
+   92 | typedef void (* TimerCallbackFunction_t)( TimerHandle_t xTimer );
+      |                                           ^~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:98:17: error: storage class specified for parameter 'PendedFunction_t'
+   98 | typedef void (* PendedFunction_t)( void *,
+      |                 ^~~~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:385:33: error: type defaults to 'int' in declaration of 'TimerHandle_t' [-Wimplicit-int]
+  385 | void * pvTimerGetTimerID( const TimerHandle_t xTimer ) PRIVILEGED_FUNCTION;
+      |                                 ^~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:385:47: error: expected ';', ',' or ')' before 'xTimer'
+  385 | void * pvTimerGetTimerID( const TimerHandle_t xTimer ) PRIVILEGED_FUNCTION;
+      |                                               ^~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:405:24: error: expected declaration specifiers or '...' before 'TimerHandle_t'
+  405 | void vTimerSetTimerID( TimerHandle_t xTimer,
+      |                        ^~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:442:1: error: unknown type name 'BaseType_t'
+  442 | BaseType_t xTimerIsTimerActive( TimerHandle_t xTimer ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:442:33: error: expected declaration specifiers or '...' before 'TimerHandle_t'
+  442 | BaseType_t xTimerIsTimerActive( TimerHandle_t xTimer ) PRIVILEGED_FUNCTION;
+      |                                 ^~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:449:1: error: expected declaration specifiers before 'TaskHandle_t'
+  449 | TaskHandle_t xTimerGetTimerDaemonTaskHandle( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1173:1: error: unknown type name 'BaseType_t'
+ 1173 | BaseType_t xTimerPendFunctionCallFromISR( PendedFunction_t xFunctionToPend,
+      | ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1173:43: error: expected declaration specifiers or '...' before 'PendedFunction_t'
+ 1173 | BaseType_t xTimerPendFunctionCallFromISR( PendedFunction_t xFunctionToPend,
+      |                                           ^~~~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1176:43: error: unknown type name 'BaseType_t'
+ 1176 |                                           BaseType_t * pxHigherPriorityTaskWoken ) PRIVILEGED_FUNCTION;
+      |                                           ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1206:1: error: unknown type name 'BaseType_t'
+ 1206 | BaseType_t xTimerPendFunctionCall( PendedFunction_t xFunctionToPend,
+      | ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1206:36: error: expected declaration specifiers or '...' before 'PendedFunction_t'
+ 1206 | BaseType_t xTimerPendFunctionCall( PendedFunction_t xFunctionToPend,
+      |                                    ^~~~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1209:36: error: unknown type name 'TickType_t'
+ 1209 |                                    TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                    ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1219:30: error: expected declaration specifiers or '...' before 'TimerHandle_t'
+ 1219 | const char * pcTimerGetName( TimerHandle_t xTimer ) PRIVILEGED_FUNCTION; /*lint !e971 Unqualified char types are allowed for strings and single characters only. */
+      |                              ^~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1235:27: error: expected declaration specifiers or '...' before 'TimerHandle_t'
+ 1235 | void vTimerSetReloadMode( TimerHandle_t xTimer,
+      |                           ^~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1236:33: error: unknown type name 'BaseType_t'
+ 1236 |                           const BaseType_t xAutoReload ) PRIVILEGED_FUNCTION;
+      |                                 ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1249:1: error: unknown type name 'BaseType_t'
+ 1249 | BaseType_t xTimerGetReloadMode( TimerHandle_t xTimer ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1249:33: error: expected declaration specifiers or '...' before 'TimerHandle_t'
+ 1249 | BaseType_t xTimerGetReloadMode( TimerHandle_t xTimer ) PRIVILEGED_FUNCTION;
+      |                                 ^~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1262:1: error: unknown type name 'UBaseType_t'
+ 1262 | UBaseType_t uxTimerGetReloadMode( TimerHandle_t xTimer ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1262:35: error: expected declaration specifiers or '...' before 'TimerHandle_t'
+ 1262 | UBaseType_t uxTimerGetReloadMode( TimerHandle_t xTimer ) PRIVILEGED_FUNCTION;
+      |                                   ^~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1272:1: error: unknown type name 'TickType_t'
+ 1272 | TickType_t xTimerGetPeriod( TimerHandle_t xTimer ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1272:29: error: expected declaration specifiers or '...' before 'TimerHandle_t'
+ 1272 | TickType_t xTimerGetPeriod( TimerHandle_t xTimer ) PRIVILEGED_FUNCTION;
+      |                             ^~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1286:1: error: unknown type name 'TickType_t'
+ 1286 | TickType_t xTimerGetExpiryTime( TimerHandle_t xTimer ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1286:33: error: expected declaration specifiers or '...' before 'TimerHandle_t'
+ 1286 | TickType_t xTimerGetExpiryTime( TimerHandle_t xTimer ) PRIVILEGED_FUNCTION;
+      |                                 ^~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1312:1: error: unknown type name 'BaseType_t'
+ 1312 | BaseType_t xTimerCreateTimerTask( void ) PRIVILEGED_FUNCTION;
+      | ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1312:42: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'PRIVILEGED_FUNCTION'
+ 1312 | BaseType_t xTimerCreateTimerTask( void ) PRIVILEGED_FUNCTION;
+      |                                          ^~~~~~~~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1313:1: error: unknown type name 'BaseType_t'
+ 1313 | BaseType_t xTimerGenericCommand( TimerHandle_t xTimer,
+      | ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1313:34: error: expected declaration specifiers or '...' before 'TimerHandle_t'
+ 1313 | BaseType_t xTimerGenericCommand( TimerHandle_t xTimer,
+      |                                  ^~~~~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1314:40: error: unknown type name 'BaseType_t'
+ 1314 |                                  const BaseType_t xCommandID,
+      |                                        ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1315:40: error: unknown type name 'TickType_t'
+ 1315 |                                  const TickType_t xOptionalValue,
+      |                                        ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1316:34: error: unknown type name 'BaseType_t'
+ 1316 |                                  BaseType_t * const pxHigherPriorityTaskWoken,
+      |                                  ^~~~~~~~~~
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/timers.h:1317:40: error: unknown type name 'TickType_t'
+ 1317 |                                  const TickType_t xTicksToWait ) PRIVILEGED_FUNCTION;
+      |                                        ^~~~~~~~~~
+/home/noise/Projects/calculator/main/calculator.c:30:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   30 | {
+      | ^
+/home/noise/Projects/calculator/main/calculator.c:41:1: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   41 | {
+      | ^
+/home/noise/esp-idf/components/freertos/FreeRTOS-Kernel/include/freertos/list.h:437:6: error: old-style parameter declarations in prototyped function definition
+  437 | void vListInitialise( List_t * const pxList ) PRIVILEGED_FUNCTION;
+      |      ^~~~~~~~~~~~~~~
+/home/noise/Projects/calculator/main/calculator.c:131: error: expected '{' at end of input
+cc1: all warnings being treated as errors
+configdep.c:684: in main: exec_process exited with error code: 1
+make[2]: *** [esp-idf/main/CMakeFiles/__idf_main.dir/build.make:79: esp-idf/main/CMakeFiles/__idf_main.dir/calculator.c.obj] Error 1
+make[1]: *** [CMakeFiles/Makefile2:9653: esp-idf/main/CMakeFiles/__idf_main.dir/all] Error 2
+make: *** [Makefile:136: all] Error 2
